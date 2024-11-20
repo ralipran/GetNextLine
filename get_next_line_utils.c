@@ -95,12 +95,14 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	if (s == NULL)
 		return (NULL);
 	s_len = ft_strlen(s);
-	if (start > s_len)
+	if (start >= s_len)
+	{
 		str = (char *)malloc(sizeof(char) * 1);
-	if (str == NULL)
-		return (NULL);
-	str[i] = 0;
-	return (str);
+		if (str == NULL)
+			return (NULL);
+		str[0] = 0;
+		return (str);
+	}
 	if (len > s_len - start)
 		len = s_len - start;
 	str = (char *)malloc(sizeof(char) * (len + 1));
