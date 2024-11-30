@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ralipran <ralipran@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: ralipran <ralipran@>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 12:33:46 by ralipran          #+#    #+#             */
-/*   Updated: 2024/11/19 18:33:17 by ralipran         ###   ########.fr       */
+/*   Updated: 2024/11/24 19:23:10 by ralipran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strdup(const char *s);
 char	*read_and_update(int fd, char *residual);
 char	*get_next_line(int fd);
+char    *ft_strlcpy_II(char *dst, const char *src, size_t dstsize);
 
 #endif
